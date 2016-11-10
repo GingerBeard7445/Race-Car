@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+    
+    VV      VV  RRRRRR     OOOOO    OOOOO    MMM MMM       VV      VV  RRRRRR    OOOOO    OOOOO    MMM MMM
+     VV    VV   RR   RR   OO   OO  OO   OO  MM MMM MM       VV    VV   RR   RR  OO   OO  OO   OO  MM MMM MM
+      VV  VV    RRRRRR    OO   OO  OO   OO  MM  M  MM        VV  VV    RRRRRR   OO   OO  OO   OO  MM  M  MM
+       VVVV     RR   RR   OO   OO  OO   OO  MM     MM         VVVV     RR  RR   OO   OO  OO   OO  MM     MM
+        VV      RR    RR   OOOOO    OOOOO   MM     MM          VV      RR   RR   OOOOO    OOOOO   MM     MM
+    
+    -->
+
+	<meta charset="utf-8">
+    <meta name="description" content="Race cars by clicking the start button.">
+    <meta name="keywords" content="race, car, racecar, stop, go, vroom">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+	
+    <title>Race Car</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Raleway" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="racecar.css">
+</head>
+
+<body>
+	<!-- Error message for screens smaller than 720px -->
+    <div class="errorMessage">
+    	<div class="erMesContainer">
+            <h2>Error</h2>
+            <p>Please use a display with a resolution wider then 720 pixels and taller than 530 pixels.</p>
+        </div>
+    </div>
+    
+    <!-- Instructions -->
+    <div class="instructions">
+    	<h1>Welcome to Vroom Vroom</h1>
+        <p>To start the race click on the countdown light below.</p>
+    </div>
+    
+    <!-- Light poles -->
+    <img id="LPID" class="lightPole" src="Images/TrackLights-01.png" onClick="countdown()" alt="Light Pole">
+
+	<!-- RaceTrack -->
+	<div class="raceTrack">
+    	<div class="railLeft"></div>
+        <div class="roadLeft"></div>
+        <img class="raceCar1" id="raceCar1ID" src="Images/RaceCars-01.png" alt="Race Car 1">
+        <div class="centerStripe"></div>
+        <div class="roadRight"></div>
+        <img class="raceCar2" id="raceCar2ID" src="Images/RaceCars-02.png" alt="Race Car 2">
+        <div class="railRight"></div> 
+    </div>
+    
+    <!-- Tie message -->
+    <div id="tieID" class="tieMessage">
+    	<div class="tieMesContainer">
+            <h2>Tie</h2>
+            <p>They are equals.</p>
+			<h3><a onClick="location.reload(true)">Play Again</a></h3>
+        </div>
+    </div>
+    
+    <!-- Car one won message -->
+    <div id="carOneID" class="carOneMessage">
+    	<div class="carOneMesContainer">
+            <h2>Car One Won!</h2>
+            <p>Way to go, you stomped the competition.</p>
+			<h3><a onClick="location.reload(true)">Play Again</a></h3>
+        </div>
+    </div>
+    
+    <!-- Car two won message -->
+    <div id="carTwoID" class="carTwoMessage">
+    	<div class="carTwoMesContainer">
+            <h2>Car Two Won!</h2>
+            <p>Way to go, you are as fast as lightning.</p>
+			<h3><a onClick="location.reload(true)">Play Again</a></h3>
+        </div>
+    </div>
+    
+    <!-- Javascript -->
+	<script src="racecar.js"></script>
+</body>
+</html>

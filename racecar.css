@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Body */
+body {background-color: #666;
+	  overflow: hidden;}
+
+h1 {font-family: 'Bungee Hairline', cursive;
+	font-size: 48px;
+	color: white;
+	margin: 20px;}
+h2 {font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+	color: white;
+	margin: 20px;}
+h3 {font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: white;
+	margin: 20px;
+	padding: 15px;
+	background-color: #333;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	width: 100px;}
+p {font-family: 'Raleway', sans-serif;
+   font-size: 16px;
+   color: white;
+   margin: 20px;}
+
+/* Error message */
+.errorMessage {position: absolute;
+			   display: none;
+			   width: 100%;
+			   height: 100%;
+			   top: 0;
+			   left: 0;
+			   z-index: 100;
+			   background-color: rgba(0, 118, 121, 0.9);}
+			   
+.erMesContainer {position: absolute;
+				 margin: 20px;}
+
+/* Instructions */
+.instructions {width: 490px;}
+
+/* Light Pole */
+.lightPole {position: absolute;
+			display: block;
+			width: 150px;
+			margin: 20px;
+			cursor: pointer;}
+
+/* Race cars */
+.raceCar1 {width: 70px;
+		   height: 155px;
+		   position: absolute;
+		   left: 25px;
+		   bottom: 0;
+		   z-index: 50;}
+
+.raceCar2 {width: 70px;
+		   height: 155px;
+		   position: absolute;
+		   left: 135px;
+		   bottom: 0;
+		   z-index: 50;}
+
+/* Race Track */
+.raceTrack {width: auto;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 490px;}
+		  
+.railLeft {width: 10px;
+		   height: 100%;
+		   background-color: #C1C1C1;
+		   position: absolute;}
+		   
+.roadLeft {width: 100px;
+		   height: 100%;
+		   background-color: #333;
+		   left: 10px;
+		   position: absolute;}
+		   
+.centerStripe {width: 10px;
+			   height: 100%;
+			   background-color: #D2D800;
+			   left: 110px;
+			   position: absolute;}
+			   
+.roadRight {width: 100px;
+			height: 100%;
+			background-color: #333;
+			left: 120px;
+			position: absolute;}
+			
+.railRight {width: 10px;
+			height: 100%;
+			background-color: #C1C1C1;
+			left: 220px;
+			position: absolute;}
+
+/* Tie message */
+.tieMessage {position: absolute;
+			 display: none;
+			 width: 100%;
+			 height: 100%;
+			 top: 0;
+			 left: 0;
+			 z-index: 99;
+			 background-color: rgba(0, 118, 121, 0.9);}
+			   
+.tieMesContainer {position: absolute;
+				  margin: 20px;}
+
+.tieShow {display: block;}
+
+.tieMessage h3 {cursor: pointer;}
+.tieMessage h3:hover {background-color: #444;}
+
+/* Car one message */
+.carOneMessage {position: absolute;
+				display: none;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: 99;
+				background-color: rgba(0, 118, 121, 0.9);}
+			   
+.carOneMesContainer {position: absolute;
+					 margin: 20px;}
+
+.carOneShow {display: block;}
+
+.carOneMessage h3 {cursor: pointer;}
+.carOneMessage h3:hover {background-color: #444;}
+
+/* Car two message */
+.carTwoMessage {position: absolute;
+				display: none;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: 99;
+				background-color: rgba(0, 118, 121, 0.9);}
+			   
+.carTwoMesContainer {position: absolute;
+					 margin: 20px;}
+
+.carTwoShow {display: block;}
+
+.carTwoMessage h3 {cursor: pointer;}
+.carTwoMessage h3:hover {background-color: #444;}
+
+/* Shows error message on smaller screens */			
+@media screen and (max-width: 720px) {
+	/* Error message */
+	.errorMessage {display: block;}
+}
+
+@media screen and (max-height: 530px) {
+	/*Error message */
+	.errorMessage {display: block;}
+}
